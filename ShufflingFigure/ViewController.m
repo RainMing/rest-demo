@@ -4,7 +4,9 @@
 //
 //  Created by lanouhn on 15/7/1.
 //  Copyright (c) 2015年 main.m. All rights reserved.
-//
+
+//博文作者：GarveyCalvin
+//博文出处：http://www.cnblogs.com/GarveyCalvin/
 
 #import "ViewController.h"
 
@@ -21,7 +23,7 @@
     /// 创建线程
     NSThread *myThread = [[NSThread alloc]initWithTarget:self selector:@selector(loadMyTHread) object:nil];
     /// 开始执行
-//    [myThread start];
+    [myThread start];
     
     //1.2）创建并马上执行方法：
     [NSThread detachNewThreadSelector:@selector(threadAlloc:) toTarget:self withObject:nil];
